@@ -1,0 +1,12 @@
+#wrapper{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#logo-cont{
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
