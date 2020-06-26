@@ -117,6 +117,10 @@ body{
     width: 70%;
   }
 
+  strong{
+    font-size: 2em;
+  }
+
   #how{
     width: 50%;
   }
