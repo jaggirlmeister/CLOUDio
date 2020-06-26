@@ -36,10 +36,10 @@ const changeColor = (weather) => {
 
     case 'thunderstorm':
       //$state = 'tormenta';
-      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(32, 46, 58, 0.94)";
-      $cloudBack.style.boxShadow = "200px 170px 19px 40px rgba(48, 49, 49)";
-      $cloudMid.style.boxShadow = "200px 170px 19px 40px rgba(98, 114, 123, 0.45)";
-      $cloudFront.style.boxShadow = "200px 170px 19px 40px rgba(82, 94, 103, 0.84)";
+      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(9, 29, 93, 0.85)";
+      $cloudBack.style.boxShadow = "200px 170px 19px 40px rgba(53, 4, 64, 0.74)";
+      $cloudMid.style.boxShadow = "200px 170px 19px 40px rgba(36, 4, 107, 0.71)";
+      $cloudFront.style.boxShadow = "200px 170px 19px 40px rgba(50, 9, 125, 0.37)";
       break;
 
     case 'snow':
