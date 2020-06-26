@@ -11,10 +11,10 @@ const changeColor = (weather) => {
     case 'clear sky':
       //$state = 'soleado';
 
-      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(195, 241, 249, 0.82)";
-      $cloudBack.style.boxShadow = "200px 200px 10px 40px rgba(190, 251, 251, 0.35)";
+      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(195, 241, 249, 0.88)";
+      $cloudBack.style.boxShadow = "200px 200px 10px 40px rgba(190, 251, 251, 0.87)";
       $cloudMid.style.boxShadow = "210px 250px 28px 30px rgba(140, 217, 255, 0.77)";
-      $cloudFront.style.boxShadow = "210px 272px 30px 0px rgba(67, 152, 177, 0.42)";
+      $cloudFront.style.boxShadow = "210px 272px 30px 0px rgba(50, 121, 142, 0.46)";
       break; 
 
     case 'few clouds' ||  'scattered clouds' || 'broken clouds':
@@ -36,9 +36,9 @@ const changeColor = (weather) => {
 
     case 'thunderstorm':
       //$state = 'tormenta';
-      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(9, 29, 93, 0.85)";
+      $cloudBase.style.boxShadow = "200px 170px 19px 40px rgba(0, 23, 68)";
       $cloudBack.style.boxShadow = "200px 170px 19px 40px rgba(53, 4, 64, 0.74)";
-      $cloudMid.style.boxShadow = "200px 170px 19px 40px rgba(36, 4, 107, 0.71)";
+      $cloudMid.style.boxShadow = "200px 170px 19px 40px rgba(36, 4, 107, 0.65)";
       $cloudFront.style.boxShadow = "200px 170px 19px 40px rgba(50, 9, 125, 0.37)";
       break;
 
