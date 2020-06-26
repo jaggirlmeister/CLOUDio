@@ -1,3 +1,7 @@
+body{
+    background-color: black; 
+}
+
 #wrapper{
     display: flex;
     min-height: 100vh;
@@ -14,7 +18,8 @@
 #cloud-wrapper {
     width: 50%;
     height: 100vh;
-    background: linear-gradient(0deg, #62a0d8 0%, #2178d1 50%, #085cb3 100%);
+    /*background: linear-gradient(0deg, #62a0d8 0%, #2178d1 50%, #085cb3 100%);*/
+    background-color: black;
     padding: 1%;
     overflow: hidden;
     /* position: relative; */
@@ -69,3 +74,13 @@
     filter: url(#filter-front);
     box-shadow: 210px 272px 30px 0px rgba(0, 0, 0, 0.4);
   }
+
+  .blue{
+    box-shadow: 200px 170px 19px 40px rgba(82, 121, 234, 0.9) !important;
+  }
+
+  .green{
+    box-shadow: 200px 170px 19px 40px rgba(143, 234, 127, 0.9) !important;
+    }
+
+
