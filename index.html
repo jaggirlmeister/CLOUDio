@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="Clau-Project" content="Hallo! This is the Clau Project"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Clau Project</title>
   </head>
@@ -19,45 +20,57 @@
 
     <main>
         <div id="wrapper">
-            <div id="logo-cont">
-                <img src='assets/media/logo2.png'>
+            <div id="cont">
+                <div id="logo-cont">
+                    <img src='assets/media/logo2.png'>
+                </div>
+                <p>Nubivagant - Wandering in the clouds; moving through air</p>
             </div>
         </div>
-
-    <div id="cloud-wrapper">
-        <div id="cont">
-            <div class="cloud" id="cloud-base"></div>
-            <div class="cloud" id="cloud-back"></div>
-            <div class="cloud" id="cloud-mid"></div>
-            <div class="cloud" id="cloud-front"></div>
-            <svg width="0" height="0"> 
-            <!--Top Layer-->
-            <filter id="filter-base">
-                <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="5" seed="8517" />     
-                <feDisplacementMap  in="SourceGraphic" scale="120" />
-            </filter>
-            <filter id="filter-back">
-                <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517" />     
-                <feDisplacementMap  in="SourceGraphic" scale="120" />
-            </filter>
-            <filter id="filter-mid">
-                <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517"/>
-                <feDisplacementMap  in="SourceGraphic" scale="120" />
-            </filter>
-            <filter id="filter-front">
-                <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="8517"/>
-                <feDisplacementMap  in="SourceGraphic" scale="50" />
-            </filter>
-            </svg>
+    <section id="explain">
+        <div id="cloud-wrapper">
+            <div id="cloud-cont">
+                <div class="cloud" id="cloud-base"></div>
+                <div class="cloud" id="cloud-back"></div>
+                <div class="cloud" id="cloud-mid"></div>
+                <div class="cloud" id="cloud-front"></div>
+                <svg width="0" height="0"> 
+                <!--Top Layer-->
+                <filter id="filter-base">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="5" seed="8517" />     
+                    <feDisplacementMap  in="SourceGraphic" scale="120" />
+                </filter>
+                <filter id="filter-back">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517" />     
+                    <feDisplacementMap  in="SourceGraphic" scale="120" />
+                </filter>
+                <filter id="filter-mid">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="3" seed="8517"/>
+                    <feDisplacementMap  in="SourceGraphic" scale="120" />
+                </filter>
+                <filter id="filter-front">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="8517"/>
+                    <feDisplacementMap  in="SourceGraphic" scale="50" />
+                </filter>
+                </svg>
+            </div>
         </div>
-    </div>
+        <div id="how">
+            <div id="text">
+                <h2 class="titulo">What is Clau?</h2>
+                <p class="subtitulo">"Clau is a weather forecast display device through a physical interface in the form of a cloud that changes its colors depending on the weather condition."</p>
 
-    <div>
-      <button id="clearSkyBtn" onclick="changeColor('clear sky')">Clear Sky</button>
-      <button id="fewCloudsBtn" onclick="changeColor('few clouds')">Few Clouds</button>
-      <button id="scatteredCloudsBtn" onclick="changeColor('scattered clouds')">Scattered Clouds</button>
-      <button id="brokenCloudsBtn" onclick="changeColor('broken clouds')">Broken Clouds</button>
-    </div>
+                <h2 class="titulo">How does it Work?</h2>
+                <p class="subtitulo">Clau is a </p>
+            </div>
+            <div>
+                <button id="clearSkyBtn" class="button is-link" onclick="changeColor('clear sky')">Clear Sky</button>
+                <button id="fewCloudsBtn" class="button is-link"  onclick="changeColor('few clouds')">Few Clouds</button>
+                <button id="scatteredCloudsBtn" class="button is-link" onclick="changeColor('scattered clouds')">Scattered Clouds</button>
+                <button id="brokenCloudsBtn" class="button is-link" onclick="changeColor('broken clouds')">Broken Clouds</button>
+            </div>
+        </div>
+    </section>
 
     </main>
 
