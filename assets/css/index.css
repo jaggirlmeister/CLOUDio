@@ -273,3 +273,25 @@ body{
 
 }
 
+
+@media screen 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1600px){
+
+  #text {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 87%;
+  }
+  #how {
+    width: 43%;
+    margin-left: 10em;
+  }
+  .titulo {
+    font-size: 4em;
+  }
+  .subtitulo {
+    font-size: 1.3em;
+  }
+
+}
