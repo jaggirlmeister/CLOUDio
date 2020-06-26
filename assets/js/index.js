@@ -103,3 +103,27 @@ const states =[
   },
 
 ]
+
+const fetchWeather = async () => { 
+
+    const location = {
+        lat: -34.6258356,
+        lng: -58.4187918
+    }
+
+    const url = 'http://api.openweathermap.org/data/2.5/weather?lat='+location.lat+'&lon='+location.lng+'&appid=b9480115954fc6c8c76827570ecbb36c'; 
+
+    const response = await fetch(url); 
+    const json = await response.json(); 
+    console.log("Response completo de la API:", json)
+
+    const {weather} = json; 
+    console.log("Objeto que tiene la propiedad que vamos a usar para la nube:", weather)
+
+    const weatherData = weather.map( ({description}) => description);
+    console.log("Dato necesario para setear el color:", weatherData);
+
+    //changeColor(weatherData); Llamada a la función que asigna el color según el clima. 
+}
+
+fetchWeather();
