@@ -200,3 +200,87 @@ Benchmark
 ¿Requiere algún tipo de interacción?
 Puede ser cualquier tipo de dispositivo fundamentalmente físicos (smart, arduino, etc)
 
+Código
+
+// PINES
+int bluePin = 3;
+int redPin = 5;
+int greenPin = 6;
+
+// COLORES
+int clearColor[3] = {255, 251, 128};
+int cloudsColor[3] = {194, 194, 194};
+int rainColor[3] = {255, 191, 238};
+int thunderstormColor[3] = {174, 92, 196};
+int snowColor[3] = {74, 151, 240};
+int mistColor[3] = {112, 207, 134};
+
+// DATA
+String weatherData; // response de la API
+int weather; // respuesta de la API igualada a un número para usar en el switch
+
+void setup() {
+  pinMode(blue, OUTPUT);
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+}
+
+void setColor ( int RGBColors[] ){
+  analogWrite(redPin, RGBColors[0])
+  analogWrite(greenPin, RGBColors[1])
+  analogWrite(bluePin, RGBColors[2])  
+}
+ 
+void loop()
+{
+  if(weatherData == "clear sky"){
+    weather = 0;
+  }
+  else if(weatherData == "few clouds" || weatherData == "scattered clouds" || weatherData == "broken clouds"){
+    weather = 1;
+  }
+  else if(weatherData == "shower rain" || weatherData == "rain"){
+  	weather = 2;
+  }
+  else if(weatherData == "thunderstorm"){
+  	weather = 3;
+  }
+  else if(weatherData == "snow"){
+  	weather = 4;
+  }
+  else if(weatherData == "mist"){
+    weather = 5;
+  }
+  
+  switch(weather){
+    
+    case 0:
+      setColor(clearColor);
+      break;
+    
+    case 1:
+      setColor(cloudsColor)
+      break;
+    
+    case 2:
+      setColor(rainColor)
+      break;
+    
+    case 3:
+      setColor(thunderstormColor)
+      break;
+    
+    case 4: 
+      setColor(snowColor)
+      break;
+    
+    case 5:
+      setColor(mistColor)
+      break;
+    
+  }
+  
+}
+
+  
+
