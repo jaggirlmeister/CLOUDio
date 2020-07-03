@@ -116,6 +116,8 @@ const states =[
 
 ]
 
+/*Conexión con la API*/
+
 const fetchWeather = async () => { 
 
     const location = {
