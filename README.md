@@ -51,9 +51,9 @@ https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=439d4b8
 Devuelve el pronóstico de los próximos 5 días cada 3 horas. Las formas de realizar el request son la misma que en Current Weather Data: city name, city ID, coordenadas geográficas y ZIP code. 
 	
 
-##2 - Diseño de App - 10pts
+## 2 - Diseño de App - 10pts
 
-###Descripción
+### Descripción
 Visualización de pronóstico del clima a través de una interfaz física en forma de nube que cambia sus colores dependiendo la condición meteorológica. 
 
 Target
@@ -189,7 +189,7 @@ Programar un horario desde una web mobile en el momento que tengas que salir.
 CLOUDio podría tener una función de juegos utilizando funciones nativas de teléfonos celulares (por ejemplo: Frío-Calor usando la distancia)
 
 
-3- Diseño de interfaz - 5pts
+## 3- Diseño de interfaz - 5pts
 En base a la investigación sobre tecnologías y las necesidades de mi web las tecnologías más adecuadas me parecen: 
 
 
