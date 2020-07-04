@@ -1,13 +1,13 @@
 # ☁ CLOUDio ☁
 
-##Nube del clima
+## Nube del clima
 
 Rodrigo Andrade, Nayla Arroyo Lizzio, Martina Franco
 
-##Análisis e Investigación
+## Análisis e Investigación
 
 
-###1 - Información - 5pts 
+### 1 - Información - 5pts 
 
 API elegida: 
 OpenWeather - www.openweathermap.org/
