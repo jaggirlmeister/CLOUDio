@@ -194,7 +194,7 @@ https://cloud-io.vercel.app/
 
 ## Código
 
-Terminada la investigación, empezamos a desarrollar el código que se ejecutaría en el Arduino. Hicimos dos versiones. La segunda usa la librería FastLED, la cual permite un mayor control sobre la tira que LED haciendo más fácil su uso. 
+Terminada la investigación, empezamos a desarrollar el código que se ejecutaría en el Arduino. Hicimos dos versiones. La segunda usa la librería FastLED, la cual permite un mayor control sobre la tira que LED haciendo más fácil su uso. Investigando las variantes que podiamos usar para generar la conexión del Arduino con la tira de LED encontramos la librería (https://howtomechatronics.com/tutorials/arduino/how-to-control-ws2812b-individually-addressable-leds-using-arduino/).
 
 ### Primera versión
 
